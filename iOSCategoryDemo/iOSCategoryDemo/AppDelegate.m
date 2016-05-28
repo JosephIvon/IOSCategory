@@ -16,8 +16,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    [self setAppearance];
     return YES;
+}
+
+- (void)setAppearance {
+    [[UINavigationBar appearance] setBarTintColor:BARTINTCOLOR];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackOpaque];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -10,10 +10,12 @@
 #import "UIColorDemoVC.h"
 #import "UIButtonDemoVC.h"
 
+#define NAVBAR_CHANGE_POINT -200
+
 @interface FWBTableViewController ()
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-
+@property (strong, nonatomic) UIView *overlay;
 @property (strong, nonatomic) NSMutableArray * dataArr;
 
 @end
@@ -34,6 +36,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    self.overlay = [[UIView alloc] initWithFrame:CGRectMake(0, - 20, kSCREEN_WIDTH, 20)];
+    [self.navigationController.navigationBar insertSubview:self.overlay atIndex:0];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(250, 0, 0, 0);
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, - 250, kSCREEN_WIDTH, 250)];
+    imageView.image = [UIImage imageNamed:@"lab.jpg"];
+    [self.tableView addSubview:imageView];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"test"];
 }
 
@@ -68,6 +80,18 @@
             break;
     }
     
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat offsetY = scrollView.contentOffset.y;
+    CGFloat alpha = MIN(1, MAX(0, 1 - (offsetY + 64) / (NAVBAR_CHANGE_POINT + 64)));
+    if (offsetY > NAVBAR_CHANGE_POINT) {
+        self.navigationController.navigationBar.backgroundColor = [BARTINTCOLOR colorWithAlphaComponent:alpha];
+        self.overlay.backgroundColor = [BARTINTCOLOR colorWithAlphaComponent:alpha];
+    }else{
+        self.navigationController.navigationBar.backgroundColor = [BARTINTCOLOR colorWithAlphaComponent:0];
+        self.overlay.backgroundColor = [BARTINTCOLOR colorWithAlphaComponent:0];
+    }
 }
 
 /*
