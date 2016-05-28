@@ -23,6 +23,9 @@
 		50FE04D81CF9E5040042D3EE /* FWBFlashButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04D71CF9E5040042D3EE /* FWBFlashButton.m */; };
 		50FE04DE1CF9E9E20042D3EE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 50FE04DD1CF9E9E20042D3EE /* background.png */; };
 		50FE04E01CF9EE410042D3EE /* lab.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50FE04DF1CF9EE410042D3EE /* lab.jpg */; };
+		50FE04E31CF9F6CA0042D3EE /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04E21CF9F6CA0042D3EE /* UIImageView+CornerRadius.m */; };
+		50FE04E61CF9FBDD0042D3EE /* UIImageViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04E51CF9FBDD0042D3EE /* UIImageViewDemoVC.m */; };
+		50FE04E81CF9FCB60042D3EE /* mac_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 50FE04E71CF9FCB60042D3EE /* mac_dog.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,11 @@
 		50FE04D71CF9E5040042D3EE /* FWBFlashButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWBFlashButton.m; sourceTree = "<group>"; };
 		50FE04DD1CF9E9E20042D3EE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		50FE04DF1CF9EE410042D3EE /* lab.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lab.jpg; sourceTree = "<group>"; };
+		50FE04E11CF9F6CA0042D3EE /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		50FE04E21CF9F6CA0042D3EE /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		50FE04E41CF9FBDD0042D3EE /* UIImageViewDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewDemoVC.h; sourceTree = "<group>"; };
+		50FE04E51CF9FBDD0042D3EE /* UIImageViewDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewDemoVC.m; sourceTree = "<group>"; };
+		50FE04E71CF9FCB60042D3EE /* mac_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mac_dog.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,8 @@
 				50FE04AF1CF92D750042D3EE /* UIColor+DYKAddition.m */,
 				50FE04B71CF933C30042D3EE /* UIImage+FWBExtension.h */,
 				50FE04B81CF933C30042D3EE /* UIImage+FWBExtension.m */,
+				50FE04E11CF9F6CA0042D3EE /* UIImageView+CornerRadius.h */,
+				50FE04E21CF9F6CA0042D3EE /* UIImageView+CornerRadius.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -158,6 +168,8 @@
 				50FE04C01CF93D870042D3EE /* UIColorDemoVC.xib */,
 				50FE04CD1CF99F070042D3EE /* UIButtonDemoVC.h */,
 				50FE04CE1CF99F070042D3EE /* UIButtonDemoVC.m */,
+				50FE04E41CF9FBDD0042D3EE /* UIImageViewDemoVC.h */,
+				50FE04E51CF9FBDD0042D3EE /* UIImageViewDemoVC.m */,
 			);
 			name = UIColorDemo;
 			sourceTree = "<group>";
@@ -174,6 +186,7 @@
 		50FE04DC1CF9E9E20042D3EE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				50FE04E71CF9FCB60042D3EE /* mac_dog.png */,
 				50FE04DF1CF9EE410042D3EE /* lab.jpg */,
 				50FE04DD1CF9E9E20042D3EE /* background.png */,
 			);
@@ -239,6 +252,7 @@
 			files = (
 				50FE04A51CF92C430042D3EE /* LaunchScreen.storyboard in Resources */,
 				50FE04DE1CF9E9E20042D3EE /* background.png in Resources */,
+				50FE04E81CF9FCB60042D3EE /* mac_dog.png in Resources */,
 				50FE04C21CF93D870042D3EE /* UIColorDemoVC.xib in Resources */,
 				50FE04E01CF9EE410042D3EE /* lab.jpg in Resources */,
 				50FE04A21CF92C430042D3EE /* Assets.xcassets in Resources */,
@@ -259,9 +273,11 @@
 				50FE04D01CF99F070042D3EE /* UIButtonDemoVC.m in Sources */,
 				50FE049A1CF92C430042D3EE /* AppDelegate.m in Sources */,
 				50FE04D81CF9E5040042D3EE /* FWBFlashButton.m in Sources */,
+				50FE04E61CF9FBDD0042D3EE /* UIImageViewDemoVC.m in Sources */,
 				50FE04C81CF98BCE0042D3EE /* UIButton+FWBExtension.m in Sources */,
 				50FE04971CF92C430042D3EE /* main.m in Sources */,
 				50FE04C11CF93D870042D3EE /* UIColorDemoVC.m in Sources */,
+				50FE04E31CF9F6CA0042D3EE /* UIImageView+CornerRadius.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 #import "FWBTableViewController.h"
 #import "UIColorDemoVC.h"
 #import "UIButtonDemoVC.h"
+#import "UIImageViewDemoVC.h"
 
 #define NAVBAR_CHANGE_POINT -200
 
@@ -27,6 +28,7 @@
         _dataArr = [NSMutableArray arrayWithArray:@[@"UIColorCategoryDemo",
                                                     @"UIButtonCategoryDemo",
                                                     @"UIImageCategoryDemo",
+                                                    @"UIImageViewCategoryDemo",
                                                     @"UITextFieldCategoryDemo",
                                                     @"UILabelCategoryDemo"]];
     }
@@ -35,6 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
@@ -75,7 +78,13 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
-    
+        case 3:
+        {
+            UIImageViewDemoVC * vc = [[UIImageViewDemoVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+
         default:
             break;
     }
