@@ -8,6 +8,7 @@
 
 #import "FWBTableViewController.h"
 #import "UIColorDemoVC.h"
+#import "UIButtonDemoVC.h"
 
 @interface FWBTableViewController ()
 
@@ -56,6 +57,13 @@
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
+        case 1:
+        {
+            UIButtonDemoVC * vc = [[UIButtonDemoVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+    
         default:
             break;
     }

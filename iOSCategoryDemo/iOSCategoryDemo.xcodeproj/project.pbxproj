@@ -19,6 +19,9 @@
 		50FE04C11CF93D870042D3EE /* UIColorDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04BF1CF93D870042D3EE /* UIColorDemoVC.m */; };
 		50FE04C21CF93D870042D3EE /* UIColorDemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FE04C01CF93D870042D3EE /* UIColorDemoVC.xib */; };
 		50FE04C81CF98BCE0042D3EE /* UIButton+FWBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04C71CF98BCE0042D3EE /* UIButton+FWBExtension.m */; };
+		50FE04D01CF99F070042D3EE /* UIButtonDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04CE1CF99F070042D3EE /* UIButtonDemoVC.m */; };
+		50FE04D81CF9E5040042D3EE /* FWBFlashButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04D71CF9E5040042D3EE /* FWBFlashButton.m */; };
+		50FE04DE1CF9E9E20042D3EE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 50FE04DD1CF9E9E20042D3EE /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,11 @@
 		50FE04C01CF93D870042D3EE /* UIColorDemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIColorDemoVC.xib; sourceTree = "<group>"; };
 		50FE04C61CF98BCE0042D3EE /* UIButton+FWBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+FWBExtension.h"; sourceTree = "<group>"; };
 		50FE04C71CF98BCE0042D3EE /* UIButton+FWBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FWBExtension.m"; sourceTree = "<group>"; };
+		50FE04CD1CF99F070042D3EE /* UIButtonDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonDemoVC.h; sourceTree = "<group>"; };
+		50FE04CE1CF99F070042D3EE /* UIButtonDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonDemoVC.m; sourceTree = "<group>"; };
+		50FE04D61CF9E5040042D3EE /* FWBFlashButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWBFlashButton.h; sourceTree = "<group>"; };
+		50FE04D71CF9E5040042D3EE /* FWBFlashButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWBFlashButton.m; sourceTree = "<group>"; };
+		50FE04DD1CF9E9E20042D3EE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +85,13 @@
 		50FE04941CF92C430042D3EE /* iOSCategoryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				50FE04B61CF932D00042D3EE /* UIColorDemo */,
-				50FE04B21CF92EFA0042D3EE /* Main */,
+				50FE04DC1CF9E9E20042D3EE /* Resources */,
 				50FE04B11CF92D850042D3EE /* Foundation */,
 				50FE04AC1CF92D750042D3EE /* ThreeParty */,
 				50FE04AD1CF92D750042D3EE /* UIKit */,
+				50FE04D51CF9E5040042D3EE /* ViewExtend */,
+				50FE04B61CF932D00042D3EE /* UIColorDemo */,
+				50FE04B21CF92EFA0042D3EE /* Main */,
 				50FE04951CF92C430042D3EE /* Supporting Files */,
 			);
 			path = iOSCategoryDemo;
@@ -144,8 +154,27 @@
 				50FE04BE1CF93D870042D3EE /* UIColorDemoVC.h */,
 				50FE04BF1CF93D870042D3EE /* UIColorDemoVC.m */,
 				50FE04C01CF93D870042D3EE /* UIColorDemoVC.xib */,
+				50FE04CD1CF99F070042D3EE /* UIButtonDemoVC.h */,
+				50FE04CE1CF99F070042D3EE /* UIButtonDemoVC.m */,
 			);
 			name = UIColorDemo;
+			sourceTree = "<group>";
+		};
+		50FE04D51CF9E5040042D3EE /* ViewExtend */ = {
+			isa = PBXGroup;
+			children = (
+				50FE04D61CF9E5040042D3EE /* FWBFlashButton.h */,
+				50FE04D71CF9E5040042D3EE /* FWBFlashButton.m */,
+			);
+			path = ViewExtend;
+			sourceTree = "<group>";
+		};
+		50FE04DC1CF9E9E20042D3EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50FE04DD1CF9E9E20042D3EE /* background.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50FE04A51CF92C430042D3EE /* LaunchScreen.storyboard in Resources */,
+				50FE04DE1CF9E9E20042D3EE /* background.png in Resources */,
 				50FE04C21CF93D870042D3EE /* UIColorDemoVC.xib in Resources */,
 				50FE04A21CF92C430042D3EE /* Assets.xcassets in Resources */,
 				50FE04A01CF92C430042D3EE /* Main.storyboard in Resources */,
@@ -222,7 +252,9 @@
 				50FE04B01CF92D750042D3EE /* UIColor+DYKAddition.m in Sources */,
 				50FE04B51CF930F90042D3EE /* FWBTableViewController.m in Sources */,
 				50FE04B91CF933C30042D3EE /* UIImage+FWBExtension.m in Sources */,
+				50FE04D01CF99F070042D3EE /* UIButtonDemoVC.m in Sources */,
 				50FE049A1CF92C430042D3EE /* AppDelegate.m in Sources */,
+				50FE04D81CF9E5040042D3EE /* FWBFlashButton.m in Sources */,
 				50FE04C81CF98BCE0042D3EE /* UIButton+FWBExtension.m in Sources */,
 				50FE04971CF92C430042D3EE /* main.m in Sources */,
 				50FE04C11CF93D870042D3EE /* UIColorDemoVC.m in Sources */,
@@ -339,6 +371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSCategoryDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSCategoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanwenbo.iOSCategoryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -351,6 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSCategoryDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSCategoryDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanwenbo.iOSCategoryDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

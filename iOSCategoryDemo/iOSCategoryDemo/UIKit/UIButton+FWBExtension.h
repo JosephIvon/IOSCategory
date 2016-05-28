@@ -6,14 +6,15 @@
 //  Copyright © 2016年 fanwenbo. All rights reserved.
 //
 
+/*
+ * 设置button在一定时间间隔内不能再次点击.举个例子,当你的项目运行不是很流畅的时候(通常出现在比较大的项目中),连续点击会触发多次事件,造成比如多次请求网络,多次push等.
+ * button快速设置不同状态下的背景颜色(button设置背景颜色不是根据状态的哦)
+ * 快速添加block代替addTarget,参考blockKit.
+*/
+
 #import <UIKit/UIKit.h>
 
 typedef void (^TouchedBlock)(NSInteger tag);
-
-typedef NS_ENUM(NSUInteger,FWBFlashButtonType) {
-    FWBFlashButtonTypeInner = 0,
-    FWBFlashButtonTypeOuter = 1
-};
 
 @interface UIButton (FWBExtension)
 
@@ -22,15 +23,6 @@ typedef NS_ENUM(NSUInteger,FWBFlashButtonType) {
  */
 @property (nonatomic, assign) NSTimeInterval timeInterval;
 
-/**
- *  Part of the removal of button
- */
-@property (nonatomic, assign) FWBFlashButtonType buttonType;
-
-/**
- *  the flashColor of button
- */
-@property (nonatomic, strong) UIColor *flashColor;
 
 /**
  *  With the background color of different color Settings button state (the default background color is not change with state)

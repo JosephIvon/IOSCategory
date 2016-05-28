@@ -88,7 +88,6 @@
                             (unsigned int)redDec,
                             (unsigned int)greenDec,
                             (unsigned int)blueDec];
-  
   return returnString;
   
 }
