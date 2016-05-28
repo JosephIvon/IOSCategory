@@ -8,6 +8,8 @@
 
 #import "UIButtonDemoVC.h"
 #import "FWBFlashButton.h"
+#import "UIButton+FWBExtension.h"
+#import "UIView+FrameExtension.h"
 
 @interface UIButtonDemoVC ()
 
@@ -51,6 +53,20 @@
     outerRectangleFlashButton.flashColor = [UIColor colorWithRed:248.0f/255.f green:175.0f/255.f blue:160.0f/255.f alpha:1];
     outerRectangleFlashButton.backgroundColor = [UIColor colorWithRed:0 green:152.0f/255.0f blue:203.0f/255.0f alpha:1.0f];
     [self.view addSubview:outerRectangleFlashButton];
+    
+    UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(100, 400, 200, 60)];
+    [button setBackgroundColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [self.view addSubview:button];
+    button.timeInterval = 1.0f;
+    __weak typeof(self) weakSelf = self;
+    [button addActionHandler:^(NSInteger tag) {
+        NSLog(@"%ld",tag);
+        [UIView animateWithDuration:0.3f animations:^{
+            button.width = button.height;
+            button.centerX = weakSelf.view.centerX;
+        }];
+    }];
     
 }
 

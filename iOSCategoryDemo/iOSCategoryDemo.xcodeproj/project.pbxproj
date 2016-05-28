@@ -26,6 +26,7 @@
 		50FE04E31CF9F6CA0042D3EE /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04E21CF9F6CA0042D3EE /* UIImageView+CornerRadius.m */; };
 		50FE04E61CF9FBDD0042D3EE /* UIImageViewDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04E51CF9FBDD0042D3EE /* UIImageViewDemoVC.m */; };
 		50FE04E81CF9FCB60042D3EE /* mac_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 50FE04E71CF9FCB60042D3EE /* mac_dog.png */; };
+		50FE04EB1CFA02B50042D3EE /* UIView+FrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04EA1CFA02B50042D3EE /* UIView+FrameExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		50FE04E41CF9FBDD0042D3EE /* UIImageViewDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewDemoVC.h; sourceTree = "<group>"; };
 		50FE04E51CF9FBDD0042D3EE /* UIImageViewDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewDemoVC.m; sourceTree = "<group>"; };
 		50FE04E71CF9FCB60042D3EE /* mac_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mac_dog.png; sourceTree = "<group>"; };
+		50FE04E91CFA02B50042D3EE /* UIView+FrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameExtension.h"; sourceTree = "<group>"; };
+		50FE04EA1CFA02B50042D3EE /* UIView+FrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 		50FE04AD1CF92D750042D3EE /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				50FE04E91CFA02B50042D3EE /* UIView+FrameExtension.h */,
+				50FE04EA1CFA02B50042D3EE /* UIView+FrameExtension.m */,
 				50FE04C61CF98BCE0042D3EE /* UIButton+FWBExtension.h */,
 				50FE04C71CF98BCE0042D3EE /* UIButton+FWBExtension.m */,
 				50FE04AE1CF92D750042D3EE /* UIColor+DYKAddition.h */,
@@ -277,6 +282,7 @@
 				50FE04C81CF98BCE0042D3EE /* UIButton+FWBExtension.m in Sources */,
 				50FE04971CF92C430042D3EE /* main.m in Sources */,
 				50FE04C11CF93D870042D3EE /* UIColorDemoVC.m in Sources */,
+				50FE04EB1CFA02B50042D3EE /* UIView+FrameExtension.m in Sources */,
 				50FE04E31CF9F6CA0042D3EE /* UIImageView+CornerRadius.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
