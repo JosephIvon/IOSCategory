@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50A3F0511CFA8AF400DFB523 /* FWBBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A3F0501CFA8AF400DFB523 /* FWBBubbleMenuButton.m */; };
 		50FE04971CF92C430042D3EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04961CF92C430042D3EE /* main.m */; };
 		50FE049A1CF92C430042D3EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE04991CF92C430042D3EE /* AppDelegate.m */; };
 		50FE04A01CF92C430042D3EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FE049E1CF92C430042D3EE /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50A3F04F1CFA8AF400DFB523 /* FWBBubbleMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWBBubbleMenuButton.h; sourceTree = "<group>"; };
+		50A3F0501CFA8AF400DFB523 /* FWBBubbleMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWBBubbleMenuButton.m; sourceTree = "<group>"; };
 		50FE04921CF92C430042D3EE /* iOSCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FE04961CF92C430042D3EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50FE04981CF92C430042D3EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 			children = (
 				50FE04D61CF9E5040042D3EE /* FWBFlashButton.h */,
 				50FE04D71CF9E5040042D3EE /* FWBFlashButton.m */,
+				50A3F04F1CFA8AF400DFB523 /* FWBBubbleMenuButton.h */,
+				50A3F0501CFA8AF400DFB523 /* FWBBubbleMenuButton.m */,
 			);
 			path = ViewExtend;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				50FE04E61CF9FBDD0042D3EE /* UIImageViewDemoVC.m in Sources */,
 				50FE04C81CF98BCE0042D3EE /* UIButton+FWBExtension.m in Sources */,
 				50FE04971CF92C430042D3EE /* main.m in Sources */,
+				50A3F0511CFA8AF400DFB523 /* FWBBubbleMenuButton.m in Sources */,
 				50FE04C11CF93D870042D3EE /* UIColorDemoVC.m in Sources */,
 				50FE04EB1CFA02B50042D3EE /* UIView+FrameExtension.m in Sources */,
 				50FE04E31CF9F6CA0042D3EE /* UIImageView+CornerRadius.m in Sources */,

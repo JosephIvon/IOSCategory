@@ -14,6 +14,22 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, UICornerStyle) {
+    UICornerStyleBottomLeft = UIRectCornerBottomLeft,
+    UICornerStyleBottomRight = UIRectCornerBottomRight,
+    UICornerStyleTopLeft = UIRectCornerTopLeft,
+    UICornerStyleTopRight = UIRectCornerTopRight,
+    UICornerStyleBottomLeftAndRight = UIRectCornerBottomLeft | UIRectCornerBottomRight,
+    UICornerStyleTopLeftAndRight = UIRectCornerTopLeft | UIRectCornerTopRight,
+    UICornerStyleBottomLeftAndTopLeft = UIRectCornerBottomLeft | UIRectCornerTopLeft,
+    UICornerStyleBottomLeftAndTopRight = UIRectCornerBottomRight | UIRectCornerTopRight,
+    UICornerStyleBottomRightAndTopLeftAndTopRight = UIRectCornerBottomRight | UIRectCornerTopRight | UIRectCornerTopLeft,
+    UICornerStyleBottomLeftAndTopLeftAndTopRight = UIRectCornerBottomLeft | UIRectCornerTopRight | UIRectCornerTopLeft,
+    UICornerStyleBottomRightAndBottomLeftAndTopRight = UIRectCornerBottomRight | UIRectCornerTopRight | UIRectCornerBottomLeft,
+    UICornerStyleBottomRightAndBottomLeftAndTopLeft = UIRectCornerBottomRight | UIRectCornerTopLeft | UIRectCornerBottomLeft,
+    CornerStyleAllCorners = UIRectCornerAllCorners,
+};
+
 typedef void (^TouchedBlock)(NSInteger tag);
 
 @interface UIButton (FWBExtension)
@@ -23,8 +39,9 @@ typedef void (^TouchedBlock)(NSInteger tag);
  */
 @property (nonatomic, assign) NSTimeInterval timeInterval;
 
+@property (nonatomic, assign) UICornerStyle cornerStyle;
 
-@property (nonatomic, assign) NSInteger cornerStyle;
+- (void)bezierPathWithRoundedRect:(CGRect)rect byRoundingCorners:(UICornerStyle)corners cornerRadii:(CGSize)cornerRadii;
 
 /**
  *  With the background color of different color Settings button state (the default background color is not change with state)
