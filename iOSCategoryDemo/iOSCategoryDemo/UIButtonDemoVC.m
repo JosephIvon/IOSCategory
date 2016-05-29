@@ -60,12 +60,13 @@
     [self.view addSubview:button];
     button.timeInterval = 1.0f;
     __weak typeof(self) weakSelf = self;
+    __weak typeof(button) weakButton = button;
     [button addActionHandler:^(NSInteger tag) {
-        NSLog(@"%ld",tag);
         [UIView animateWithDuration:0.3f animations:^{
-            button.width = button.height;
-            button.centerX = weakSelf.view.centerX;
+            weakButton.width = weakButton.height;
+            weakButton.centerX = weakSelf.view.centerX;
         }];
+        weakButton.cornerStyle = 8;
     }];
     
 }

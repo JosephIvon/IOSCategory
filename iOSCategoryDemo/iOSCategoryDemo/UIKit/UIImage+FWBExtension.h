@@ -12,6 +12,11 @@
 @interface UIImage (FWBExtension)
 
 /**
+ *  利用getter方法获得图片的原色
+ */
+@property(nonatomic,strong,readonly) UIImage * originalImage;
+
+/**
  *  自由拉伸一张图片
  *
  *  @param name 图片名字

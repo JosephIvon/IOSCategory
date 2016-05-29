@@ -24,6 +24,8 @@ typedef void (^TouchedBlock)(NSInteger tag);
 @property (nonatomic, assign) NSTimeInterval timeInterval;
 
 
+@property (nonatomic, assign) NSInteger cornerStyle;
+
 /**
  *  With the background color of different color Settings button state (the default background color is not change with state)
  */

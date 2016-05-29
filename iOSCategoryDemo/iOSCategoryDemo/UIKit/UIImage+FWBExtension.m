@@ -11,6 +11,13 @@
 
 @implementation UIImage (FWBExtension)
 
+-(UIImage*)originalImage{
+    if([UIDevice currentDevice].systemVersion.floatValue >= 7.0){
+        return [self imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    }
+    return self;
+}
+
 + (UIImage *)resizedImageWithName:(NSString *)name left:(CGFloat)left top:(CGFloat)top
 {
     UIImage *image = [UIImage imageNamed:name];
